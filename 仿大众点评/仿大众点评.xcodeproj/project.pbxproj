@@ -21,6 +21,7 @@
 		F48EC57D19C04A390006BC0C /* DPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F48EC57B19C04A390006BC0C /* DPAppDelegate.m */; };
 		F48EC57E19C04A390006BC0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F48EC57C19C04A390006BC0C /* main.m */; };
 		F48EC58419C04A980006BC0C /* DPMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48EC58319C04A980006BC0C /* DPMainController.m */; };
+		F4B060B819C2B71F008E93E4 /* DPDock.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B060B719C2B71F008E93E4 /* DPDock.m */; };
 		F4D1B77019BF0853002510E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D1B76F19BF0853002510E7 /* Foundation.framework */; };
 		F4D1B77219BF0853002510E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D1B77119BF0853002510E7 /* CoreGraphics.framework */; };
 		F4D1B77419BF0853002510E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D1B77319BF0853002510E7 /* UIKit.framework */; };
@@ -241,6 +242,8 @@
 		F48EC57C19C04A390006BC0C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F48EC58219C04A980006BC0C /* DPMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMainController.h; sourceTree = "<group>"; };
 		F48EC58319C04A980006BC0C /* DPMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMainController.m; sourceTree = "<group>"; };
+		F4B060B619C2B71F008E93E4 /* DPDock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPDock.h; sourceTree = "<group>"; };
+		F4B060B719C2B71F008E93E4 /* DPDock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPDock.m; sourceTree = "<group>"; };
 		F4D1B76C19BF0853002510E7 /* 仿大众点评.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "仿大众点评.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D1B76F19BF0853002510E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F4D1B77119BF0853002510E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -510,6 +513,8 @@
 		F48EC58119C04A550006BC0C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F4B060B619C2B71F008E93E4 /* DPDock.h */,
+				F4B060B719C2B71F008E93E4 /* DPDock.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1133,6 +1138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B060B819C2B71F008E93E4 /* DPDock.m in Sources */,
 				F48EC57E19C04A390006BC0C /* main.m in Sources */,
 				F48EC57D19C04A390006BC0C /* DPAppDelegate.m in Sources */,
 				F48EC58419C04A980006BC0C /* DPMainController.m in Sources */,

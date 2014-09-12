@@ -7,6 +7,7 @@
 //
 
 #import "DPMainController.h"
+#import "DPDock.h"
 
 @interface DPMainController ()
 
@@ -26,13 +27,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    //初始化Dock
+    DPDock *dock = [[DPDock alloc] init];
+    dock.backgroundColor = [UIColor orangeColor];
+    dock.frame = CGRectMake(0, 0, 100.0, self.view.bounds.size.height);
+    [self.view addSubview:dock];
+    NSLog(@"---%@",NSStringFromCGRect(self.view.frame));
+    NSLog(@"-%@",NSStringFromCGRect(dock.frame));
 }
 
+<<<<<<< HEAD
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+=======
+>>>>>>> FETCH_HEAD
 @end
