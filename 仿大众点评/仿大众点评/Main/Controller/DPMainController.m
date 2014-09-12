@@ -7,6 +7,7 @@
 //
 
 #import "DPMainController.h"
+#import "DPDock.h"
 
 @interface DPMainController ()
 
@@ -26,24 +27,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    //初始化Dock
+    DPDock *dock = [[DPDock alloc] init];
+    dock.backgroundColor = [UIColor orangeColor];
+    dock.frame = CGRectMake(0, 0, 100.0, self.view.bounds.size.height);
+    [self.view addSubview:dock];
+    NSLog(@"---%@",NSStringFromCGRect(self.view.frame));
+    NSLog(@"-%@",NSStringFromCGRect(dock.frame));
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

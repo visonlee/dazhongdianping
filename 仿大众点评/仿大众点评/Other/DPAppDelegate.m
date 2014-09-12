@@ -7,14 +7,17 @@
 //
 
 #import "DPAppDelegate.h"
+#import "DPMainController.h"
 
 @implementation DPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor redColor];
+    
+    DPMainController *main = [[DPMainController alloc] init];
+    [self.window setRootViewController:main];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
